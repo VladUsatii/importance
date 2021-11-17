@@ -39,11 +39,14 @@ def dirlist():
 			files[index] = f'[red]{fi}[/red]'
 		elif fi in updateable:
 			files[index] = f'[yellow]{fi}[/yellow]'
-		elif fi not in active and fi not in important and fi not in updateable:
+		else:
 			files[index] = f'[white]{fi}[/white]'
 
-	for a, b, c in zip(files[::3], files[1::3], files[2::3]):
-		print('{0}		{1}		{2}'.format(a,b,c))
+	if len(files) % 2 == 1:
+		files.append('')
+	composite_list = [files[x:x+2] for x in range(0, len(files),2)]
+	for j in composite_list:
+		print(j[0].ljust(35, ' ') + "	" + j[1].ljust(35, ' '))
 
 def main():
 	dirlist()

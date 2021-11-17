@@ -7,8 +7,5 @@
 # > ./main.py [ COMMAND ]
 
 pip install -r requirements.txt
-
-# More soon
-
 chmod +x main.py
-
+python3 alias.py
