@@ -18,6 +18,13 @@ Here is an example of a color-coded folder. It is super important.
 
 ### Config ⚙️
 
+First, place the importance directory in your project folder. Should be relative to the files. Then, run an init:
+
+```bash
+>>> cd [ project_name ]
+>>> importance gen
+```
+
 To config a colored directory:
 
 ```bash
