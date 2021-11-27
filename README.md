@@ -18,18 +18,37 @@ Here is an example of a color-coded folder. It is super important.
 
 ### Config ⚙️
 
-First, place the importance directory in your project folder. Should be relative to the files. Then, run an init:
+To get importance in your directory, ```cd``` into it and clone importance relative to it:
 
 ```bash
 >>> cd [ project_name ]
->>> importance gen
+>>> git clone "https://github.com/VladUsatii/importance.git"
+>>> cd importance
+>>> bash setup.sh # first time user only
 ```
 
-To config a colored directory:
+To test it, type ```cls```:
 
 ```bash
->>> cd importance
+>>> cls
+```
+
+To actually see color on some of the directories:
+
+```bash
 >>> vi active.txt # if active project
 >>> vi important.txt # if important project
->>> # updateable will autoconfig soon
 ```
+
+Enjoy 😊
+
+
+## TODO:
+
+Big todo: make a GUI for adding important files!!!
+
+---
+
+Created by Vlad Usatii @ youshould.readproduct.com
+
+
