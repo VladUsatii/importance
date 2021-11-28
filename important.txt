@@ -1,1 +1,3 @@
 anotheridea.md
+${fname}
+data

@@ -27,28 +27,33 @@ To get importance in your directory, ```cd``` into it and clone importance relat
 >>> bash setup.sh # first time user only
 ```
 
-To test it, type ```cls```:
+To test it, type ```cls```. **We are aware that ```cls``` is also used for ```clear``` on some systems.**:
 
 ```bash
 >>> cls
 ```
 
-To actually see color on some of the directories:
+To add a file as important (red) or active (green):
 
 ```bash
->>> vi active.txt # if active project
->>> vi important.txt # if important project
+>>> cls-red [ filename ]
+>>> cls-green [ filename ]
 ```
 
 Enjoy 😊
 
+---
 
-## TODO:
+### Popular Questions
 
-Big todo: make a GUI for adding important files!!!
+**Isn't ```cls``` the clear screen command?**
+
+It is the clear screen command, but keep in mind that this utility was designed for Unix/MacOS primarily. I might port this to other OSes in the future, but I see no point as this is where I do a lot of my work.
+
+**Is this a package?**
+
+This will never be a package. I find it much more handy to git clone the importance repository in all of my projects where I need to color-code files by importance. This eliminates the confusion from appending via the ```cls-red``` and ```cls-green``` commands.
 
 ---
 
 Created by Vlad Usatii @ youshould.readproduct.com
-
-
